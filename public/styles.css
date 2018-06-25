@@ -1,4 +1,4 @@
-.container-fluid {
+.banner {
     background: url(/images/accueil.png) no-repeat;
     height: 305px;
     width: 100%;
@@ -20,4 +20,12 @@ hr {
 
 .btn:hover {
     color: #717171;
+}
+
+.dropdown-item {
+    color: #717171;
+}
+
+.star {
+    color: #fff200;
 }
