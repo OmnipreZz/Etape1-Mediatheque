@@ -18,3 +18,13 @@ $.getJSON("https://www.googleapis.com/books/v1/volumes?q=search+terms", function
     $("#desc1").html(desc);
     console.log(desc);
 });
+
+$.getJSON("https://www.googleapis.com/books/v1/volumes?q=search+terms", function (data) {
+    var affiche = data.items[0].volumeInfo.imageLinks.thumbnail;
+    var titre = data.items[0].volumeInfo.title;
+    var desc = data.items[0].volumeInfo.description;
+    $("#affiche2").html("<img src='" + affiche + "'>");
+    $("#titre2").html(titre);
+    $("#desc2").html(desc);
+    console.log(desc);
+});
